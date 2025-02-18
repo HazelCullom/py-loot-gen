@@ -10,7 +10,9 @@ class Weapon(LootItem):
     def __init__(self):
         # instance variables
         pass
-    
+
+    def is_weapon():
+        return True
 
     # interface methods
     @abstractmethod

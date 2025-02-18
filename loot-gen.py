@@ -2,6 +2,7 @@ import random
 import os
 import importlib
 
+
 # code will be here, YAAAAAAAYYYYYYY!!!!!!!
 
 # get all types of loot in a list
@@ -18,7 +19,7 @@ for loot_str in LOOT_STRS:
 
 
 
-def generate_random_loot():
+def generate_random_loot(whitelist=LOOT_STRS.copy()):
 
     # pick a random piece of loot
     # call that loot's generate function
@@ -28,9 +29,18 @@ def generate_random_loot():
       just a fuck ton of optional arguments with default values defined somewhere
       json format something or other
     """
+    # filter out weapons if user added "Weapon" to whitelist
+    if "Weapon" in whitelist:
+        for loot_str in LOOT_STRS:
+            if LOOT_CLASSES[loot_str].is_weapon():
+                whitelist.append(loot_str)
+
+    loot = random.choice(list(filter(lambda s: s in whitelist, LOOT_STRS)))
+    instance = LOOT_CLASSES[loot]()
     pass
 
 
 if __name__ == "__main__":
     print(LOOT_STRS)
-    print(generate_random_loot())
+    generate_random_loot(whitelist=["Weapon"])
+    generate_random_loot(whitelist=["Shield"])

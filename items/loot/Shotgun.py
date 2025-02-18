@@ -1,7 +1,9 @@
 from abc import abstractmethod
-from items.Item import Item
+from items.Weapon import Weapon
 
-class LootItem(Item):
+
+
+class Shotgun(Weapon):
     
     # static member variables, same for all objects of this class
 
@@ -9,14 +11,11 @@ class LootItem(Item):
 
     def __init__(self):
         # instance variables
-        
+        print("Made a Shotgun")
         pass
-
-    def is_weapon():
-        return False
     
 
+
     # interface methods
-    @abstractmethod
     def display(self):
         pass
