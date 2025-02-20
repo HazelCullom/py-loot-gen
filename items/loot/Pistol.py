@@ -7,7 +7,8 @@ from items.Weapon import Weapon
 class Pistol(Weapon):
     
     # static member variables, same for all objects of this class
-
+    
+    # body grip barrel accessory sight
 
 
     def __init__(self):
