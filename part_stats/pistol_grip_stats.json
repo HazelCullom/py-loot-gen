@@ -1,0 +1,118 @@
+{
+  "Bandit": {
+    "Mag Size": [
+      "MUL",
+      1.35
+    ],
+    "Reload Time": [
+      "MUL",
+      1.1
+    ],
+    "Weapon Spread": [
+      "MUL",
+      1.15
+    ]
+  },
+  "Dahl": {
+    "Accuracy Regen": [
+      "MUL",
+      1.1
+    ],
+    "Impulse Accuracy": [
+      "DIV",
+      1.15
+    ],
+    "Max Accuracy": [
+      "MUL",
+      1.15
+    ],
+    "Weapon Damage": [
+      "DIV",
+      1.06
+    ]
+  },
+  "Hyperion": {
+    "Accuracy Regen": [
+      "MUL",
+      1.1
+    ],
+    "Weapon Damage": [
+      "DIV",
+      1.09
+    ],
+    "Weapon Spread": [
+      "DIV",
+      1.15
+    ]
+  },
+  "Jakobs": {
+    "Fire Interval": [
+      "MUL",
+      1.09
+    ],
+    "Impulse Accuracy": [
+      "MUL",
+      1.1
+    ],
+    "Reload Time": [
+      "MUL",
+      1.05
+    ],
+    "Weapon Damage": [
+      "MUL",
+      1.12
+    ]
+  },
+  "Maliwan": {
+    "Status Chance Modifier": [
+      "MUL",
+      1.15
+    ]
+  },
+  "Tediore": {
+    "Mag Size": [
+      "DIV",
+      1.14
+    ],
+    "Reload Time": [
+      "DIV",
+      1.2
+    ],
+    "Weapon Damage": [
+      "DIV",
+      1.06
+    ]
+  },
+  "Torgue": {
+    "Impulse Accuracy": [
+      "MUL",
+      1.15
+    ],
+    "Reload Time": [
+      "MUL",
+      1.1
+    ],
+    "Weapon Damage": [
+      "MUL",
+      1.09
+    ],
+    "Weapon Spread": [
+      "MUL",
+      1.1
+    ]
+  },
+  "Vladof": {
+    "Accuracy Regen": [
+      "DIV",
+      1.1
+    ],
+    "Fire Interval": [
+      "DIV",
+      1.12
+    ],
+    "Weapon Damage": [
+      "DIV",
+      1.06
+    ]
+  }
+}
