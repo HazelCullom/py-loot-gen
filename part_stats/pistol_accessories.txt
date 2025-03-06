@@ -1,0 +1,48 @@
+No Accessory
+-,
+Accuracy Laser
+Laser Mesh
+÷1.25 Max Accuracy
+÷1.25 Min Accuracy
+×1.2 Projectile Speed
+÷1.4 Weapon Spread,
+Bayonet 1
+Bayonet 1 Mesh
++50% Melee Damage,
+Bayonet 2
+Bayonet 2 Mesh
++50% Melee Damage,
+Double Laser
+Laser Mesh
+×1.3 Fire Interval
++4 Impulse Accuracy
+×1.28 Mag Size
++2 Mag Size
+×1.25 Min Accuracy
+×1.6 Projectile Count
++0.4 Projectile Count
+×2 Shot Cost
+÷1.15 Weapon Damage
+×1.25 Weapon Spread
++1 Weapon Spread
+On Hyperion:
+−4 Impulse Accuracy,
+Stock
+Stock Mesh
+÷1.3 Impulse Accuracy
+÷1.35 Max Accuracy
+÷1.15 Weapon Spread,
+Tech 1 Mag
+Tech 1 Mesh
+×1.56 Mag Size
+×1.15 Reload Time,
+Tech 2 Damage
+Tech 2 Mesh
+×1.3 Impulse Accuracy
+×1.18 Weapon Damage,
+Tech 3 Firerate
+Tech 3 Mesh
+÷1.18 Fire Interval
+÷1.03 Weapon Damage
+On Jakobs:
++2 Additional Ricochets

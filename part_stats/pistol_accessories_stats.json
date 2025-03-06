@@ -1,0 +1,152 @@
+{
+  "No Accessory": {
+    "Stats": {},
+    "Matching": {}
+  },
+  "Accuracy Laser": {
+    "Stats": {
+      "Max Accuracy": [
+        "DIV",
+        1.25
+      ],
+      "Min Accuracy": [
+        "DIV",
+        1.25
+      ],
+      "Projectile Speed": [
+        "MUL",
+        1.2
+      ],
+      "Weapon Spread": [
+        "DIV",
+        1.4
+      ]
+    },
+    "Matching": {}
+  },
+  "Bayonet 1": {
+    "Stats": {
+      "Melee Damage": [
+        "MUL",
+        1.5
+      ]
+    },
+    "Matching": {}
+  },
+  "Bayonet 2": {
+    "Stats": {
+      "Melee Damage": [
+        "MUL",
+        1.5
+      ]
+    },
+    "Matching": {}
+  },
+  "Double Laser": {
+    "Stats": {
+      "Fire Interval": [
+        "MUL",
+        1.3
+      ],
+      "Impulse Accuracy": [
+        "ADD",
+        4.0
+      ],
+      "Mag Size": [
+        "ADD",
+        2.0
+      ],
+      "Min Accuracy": [
+        "MUL",
+        1.25
+      ],
+      "Projectile Count": [
+        "ADD",
+        0.4
+      ],
+      "Shot Cost": [
+        "MUL",
+        2.0
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.15
+      ],
+      "Weapon Spread": [
+        "ADD",
+        1.0
+      ]
+    },
+    "Matching": {
+      "Hyperion": {
+        "Impulse Accuracy": [
+          "SUB",
+          4.0
+        ]
+      }
+    }
+  },
+  "Stock": {
+    "Stats": {
+      "Impulse Accuracy": [
+        "DIV",
+        1.3
+      ],
+      "Max Accuracy": [
+        "DIV",
+        1.35
+      ],
+      "Weapon Spread": [
+        "DIV",
+        1.15
+      ]
+    },
+    "Matching": {}
+  },
+  "Tech 1 Mag": {
+    "Stats": {
+      "Mag Size": [
+        "MUL",
+        1.56
+      ],
+      "Reload Time": [
+        "MUL",
+        1.15
+      ]
+    },
+    "Matching": {}
+  },
+  "Tech 2 Damage": {
+    "Stats": {
+      "Impulse Accuracy": [
+        "MUL",
+        1.3
+      ],
+      "Weapon Damage": [
+        "MUL",
+        1.18
+      ]
+    },
+    "Matching": {}
+  },
+  "Tech 3 Firerate": {
+    "Stats": {
+      "Fire Interval": [
+        "DIV",
+        1.18
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.03
+      ]
+    },
+    "Matching": {
+      "Jakobs": {
+        "Additional Ricochets": [
+          "ADD",
+          2.0
+        ]
+      }
+    }
+  }
+}
