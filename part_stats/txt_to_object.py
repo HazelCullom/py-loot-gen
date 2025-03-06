@@ -1,5 +1,5 @@
 
-import json
+import json, sys
 
 """
 Convert:
@@ -15,65 +15,96 @@ On Bandit:
 
 To: 
 
-Pistol Grip Stats = {"Bandit": {"Mag Size": (MUL, 1.35), "Reload Time": (MUL, 1.1), "Weapon Spread": (MUL,1.15)}}
-Pistol Grip Match Bonus = {"Bandit": {"Mag Size": (ADD,4), "Reload Time": (DIV, 1.3)}}
+Pistol Grip Stats = {"Bandit": {"Stats": {"Mag Size": (MUL, 1.35), "Reload Time": (MUL, 1.1), "Weapon Spread": (MUL,1.15)}, "Matching": {"Bandit": {"Mag Size": (ADD,4), "Reload Time": (DIV, 1.3)}}}}
+
+pg_stats["Bandit"]["Stats"] == {"Mag Size": (MUL, 1.35), "Reload Time": (MUL, 1.1), "Weapon Spread": (MUL,1.15)}
+pg_stats["Bandit"]["Matching"] == {"Bandit": {"Mag Size": (ADD,4), "Reload Time": (DIV, 1.3)}}
+
+pistol = ["Grip": "Bandit", "Body": "Dahl", "Rarity": "Rare", "Barrel": "Torgue", "Accessories": [], "Sight": ""]
+
+stats that say "On Zoom" will just add Zoom to the stat name:
+ex) 
+    On Zoom
+    +3 Movement Speed
+becomes:
+    "Zoom Movement Speed": (ADD, 3)
+
+ex2) 
+    On Dahl + Zoom
+    +2 Burst Count
+becomes:
+    {"Matching": {"Dahl": {"Zoom Burst Count": (ADD, 2), ...}}
 
 """
+
+if len(sys.argv) <= 1:
+    print("ERROR: missing input file argument")
+    print("Usage: python ./"+__file__.split('\\')[-1].split('/')[-1]+" input_file.txt")
+    exit()
+
+READ_FILE = sys.argv[1]
+WRITE_FILE = READ_FILE[:-4] + "_stats.json"
 
 operators = ['*', '/', '+', '-', '×', '÷', '−']
 operator_match = {'*': "MUL", '/': "DIV", '+': "ADD", '-': "SUB", '×': "MUL", '÷': "DIV", '−': "SUB"}
 
-file_str = open("pistol_grips.txt", "r").read()
+print("Reading data from:", READ_FILE)
+file_str = open(READ_FILE, "r", encoding='utf-8').read()
 
 split_str = file_str.split(',')
 
 stat_obj = {}
-match_bonus_obj = {}
-stat_str = "{"
-bonus_str = "{"
 
 for stats in split_str:
     stats = stats.strip().split('\n')
 
     manufacturer = stats[0]
 
-    stat_obj[manufacturer] = {}
-    match_bonus_obj[manufacturer] = {}
-    stat_str += "\"" + manufacturer + "\": {"
-    bonus_str += "\"" + manufacturer + "\": {"
+    stat_obj[manufacturer] = {"Stats": {}, "Matching": {}}
 
+    stat_mode = "Stats"
 
-    matching_bonus = False
+    for line in stats[1:]:
+        if line[0] in operators and len(line) > 1:
 
-    for line in stats[2:]:
-        if line[0] in operators:
+            true_stat_mode = stat_mode
+            stat_num, stat = line[1:].split(' ', 1)
+            operator = operator_match[line[0]]
 
-            # if we are in grip stat
-            if not matching_bonus:
-                stat_num, stat = line[1:].split(' ', 1)
-                stat_obj[manufacturer][stat] = (operator_match[line[0]], float(stat_num))
-                stat_str += "\"" + stat + "\": (" + operator_match[line[0]] + ", " + stat_num + "), "
-
-            # else if we are in matching grip bonus
-            else:
-                stat_num, stat = line[1:].split(' ', 1)
-                match_bonus_obj[manufacturer][stat] = (operator_match[line[0]], float(stat_num))
-                bonus_str += "\"" + stat + "\": (" + operator_match[line[0]] + ", " + stat_num + "), "
+            if "%" in stat_num:
+                # convert % to mult
+                stat_num = (float(stat_num[:-1]) / 100)
+                if operator == "SUB":
+                    stat_num *= -1
+                stat_num = 1 + stat_num
+                operator = "MUL"
                 pass
 
-        elif not matching_bonus:
-            # we are now on matching bonus
-            matching_bonus = True
-            stat_str = stat_str[:-2] + "}, \n"
-    
-    bonus_str = bonus_str[:-2] + "}, \n"
+            if "Zoom" in true_stat_mode:
+                true_stat_mode = true_stat_mode[4:]
+                stat = "Zoom " + stat
 
-stat_str = stat_str[:-3] + "}"
-bonus_str = bonus_str[:-3] + "}"
-print("Grip Modifiers:\n", stat_str, end="\n\n")
-print("Grip Bonus Modifiers:\n", bonus_str, end="\n\n")
+            if "Matching" in true_stat_mode:
+                match_manufac = true_stat_mode[8:]
+                if not match_manufac in stat_obj[manufacturer]["Matching"]:
+                    stat_obj[manufacturer]["Matching"][match_manufac] = {}
+                stat_obj[manufacturer]["Matching"][match_manufac][stat] = (operator, float(stat_num))
+            else:
+                stat_obj[manufacturer]["Stats"][stat] = (operator, float(stat_num))
 
-print("Grip Modifiers:\n", json.dumps(stat_obj, indent=2), end="\n\n")
+        elif "on zoom" in line.lower():
+            stat_mode = "ZoomStats"
+        
+        elif "on dahl + zoom" in line.lower():
+            stat_mode = "ZoomMatchingDahl"
+        
+        elif "on" in line[:3].lower():
+            # line is "On ___" where ___ is the manufacturer
+            stat_mode = "Matching" + line[3:-1]
+        
 
-with open("pistol_grip_stats.json", 'w') as file:
+
+#print("Grip Modifiers:\n", json.dumps(stat_obj, indent=2), end="\n\n")
+print("Done, exporting to:", WRITE_FILE)
+with open(WRITE_FILE, 'w') as file:
     json.dump(stat_obj, file, indent=2)
