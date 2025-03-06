@@ -1,118 +1,204 @@
 {
   "Bandit": {
-    "Mag Size": [
-      "MUL",
-      1.35
-    ],
-    "Reload Time": [
-      "MUL",
-      1.1
-    ],
-    "Weapon Spread": [
-      "MUL",
-      1.15
-    ]
+    "Stats": {
+      "Mag Size": [
+        "MUL",
+        1.35
+      ],
+      "Reload Time": [
+        "MUL",
+        1.1
+      ],
+      "Weapon Spread": [
+        "MUL",
+        1.15
+      ]
+    },
+    "Matching": {
+      "Bandit": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   },
   "Dahl": {
-    "Accuracy Regen": [
-      "MUL",
-      1.1
-    ],
-    "Impulse Accuracy": [
-      "DIV",
-      1.15
-    ],
-    "Max Accuracy": [
-      "MUL",
-      1.15
-    ],
-    "Weapon Damage": [
-      "DIV",
-      1.06
-    ]
+    "Stats": {
+      "Accuracy Regen": [
+        "MUL",
+        1.1
+      ],
+      "Impulse Accuracy": [
+        "DIV",
+        1.15
+      ],
+      "Max Accuracy": [
+        "MUL",
+        1.15
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.06
+      ]
+    },
+    "Matching": {
+      "Dahl": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   },
   "Hyperion": {
-    "Accuracy Regen": [
-      "MUL",
-      1.1
-    ],
-    "Weapon Damage": [
-      "DIV",
-      1.09
-    ],
-    "Weapon Spread": [
-      "DIV",
-      1.15
-    ]
+    "Stats": {
+      "Accuracy Regen": [
+        "MUL",
+        1.1
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.09
+      ],
+      "Weapon Spread": [
+        "DIV",
+        1.15
+      ]
+    },
+    "Matching": {
+      "Hyperion": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   },
   "Jakobs": {
-    "Fire Interval": [
-      "MUL",
-      1.09
-    ],
-    "Impulse Accuracy": [
-      "MUL",
-      1.1
-    ],
-    "Reload Time": [
-      "MUL",
-      1.05
-    ],
-    "Weapon Damage": [
-      "MUL",
-      1.12
-    ]
+    "Stats": {
+      "Fire Interval": [
+        "MUL",
+        1.09
+      ],
+      "Impulse Accuracy": [
+        "MUL",
+        1.1
+      ],
+      "Reload Time": [
+        "MUL",
+        1.05
+      ],
+      "Weapon Damage": [
+        "MUL",
+        1.12
+      ]
+    },
+    "Matching": {
+      "Jakobs": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   },
   "Maliwan": {
-    "Status Chance Modifier": [
-      "MUL",
-      1.15
-    ]
+    "Stats": {
+      "Status Chance Modifier": [
+        "MUL",
+        1.15
+      ]
+    },
+    "Matching": {
+      "Maliwan": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   },
   "Tediore": {
-    "Mag Size": [
-      "DIV",
-      1.14
-    ],
-    "Reload Time": [
-      "DIV",
-      1.2
-    ],
-    "Weapon Damage": [
-      "DIV",
-      1.06
-    ]
+    "Stats": {
+      "Mag Size": [
+        "DIV",
+        1.14
+      ],
+      "Reload Time": [
+        "DIV",
+        1.2
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.06
+      ]
+    },
+    "Matching": {
+      "Tediore": {
+        "Reload Time": [
+          "SUB",
+          0.15
+        ]
+      }
+    }
   },
   "Torgue": {
-    "Impulse Accuracy": [
-      "MUL",
-      1.15
-    ],
-    "Reload Time": [
-      "MUL",
-      1.1
-    ],
-    "Weapon Damage": [
-      "MUL",
-      1.09
-    ],
-    "Weapon Spread": [
-      "MUL",
-      1.1
-    ]
+    "Stats": {
+      "Impulse Accuracy": [
+        "MUL",
+        1.15
+      ],
+      "Reload Time": [
+        "MUL",
+        1.1
+      ],
+      "Weapon Damage": [
+        "MUL",
+        1.09
+      ],
+      "Weapon Spread": [
+        "MUL",
+        1.1
+      ]
+    },
+    "Matching": {
+      "Torgue": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   },
   "Vladof": {
-    "Accuracy Regen": [
-      "DIV",
-      1.1
-    ],
-    "Fire Interval": [
-      "DIV",
-      1.12
-    ],
-    "Weapon Damage": [
-      "DIV",
-      1.06
-    ]
+    "Stats": {
+      "Accuracy Regen": [
+        "DIV",
+        1.1
+      ],
+      "Fire Interval": [
+        "DIV",
+        1.12
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.06
+      ]
+    },
+    "Matching": {
+      "Jakobs": {
+        "Reload Time": [
+          "DIV",
+          1.15
+        ]
+      },
+      "Vladof": {
+        "Reload Time": [
+          "DIV",
+          1.3
+        ]
+      }
+    }
   }
 }

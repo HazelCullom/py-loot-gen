@@ -1,0 +1,466 @@
+{
+  "Bandit": {
+    "Stats": {
+      "Min Accuracy": [
+        "MUL",
+        1.15
+      ],
+      "Weapon Damage": [
+        "MUL",
+        1.06
+      ],
+      "Weapon Spread": [
+        "MUL",
+        1.15
+      ]
+    },
+    "Matching": {
+      "Bandit": {
+        "Impulse Accuracy": [
+          "SUB",
+          0.7
+        ],
+        "Weapon Damage": [
+          "MUL",
+          1.05
+        ]
+      }
+    }
+  },
+  "Dahl": {
+    "Stats": {
+      "Accuracy Regen": [
+        "MUL",
+        1.25
+      ],
+      "Burst Impulse Scale": [
+        "DIV",
+        1.15
+      ],
+      "Impulse Accuracy": [
+        "DIV",
+        1.4
+      ],
+      "Max Accuracy": [
+        "DIV",
+        1.25
+      ],
+      "Weapon Damage": [
+        "DIV",
+        1.09
+      ],
+      "Weapon Spread": [
+        "MUL",
+        1.2
+      ]
+    },
+    "Matching": {
+      "Dahl": {
+        "Zoom Burst Count": [
+          "ADD",
+          2.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          1.1
+        ],
+        "Weapon Spread": [
+          "SUB",
+          0.3
+        ]
+      }
+    }
+  },
+  "E-Tech": {
+    "Stats": {
+      "Crit Damage": [
+        "DIV",
+        1.5
+      ],
+      "Fire Interval": [
+        "DIV",
+        1.15
+      ],
+      "Impulse Accuracy": [
+        "DIV",
+        3.0
+      ],
+      "Mag Size": [
+        "MUL",
+        1.8
+      ],
+      "Max Accuracy": [
+        "DIV",
+        2.0
+      ],
+      "Min Accuracy": [
+        "DIV",
+        2.0
+      ],
+      "Shot Cost": [
+        "ADD",
+        1.0
+      ],
+      "Status Chance Modifier": [
+        "MUL",
+        1.2
+      ],
+      "Weapon Damage": [
+        "MUL",
+        1.8
+      ]
+    },
+    "Matching": {
+      "Bandit": {
+        "Mag Size": [
+          "ADD",
+          30.0
+        ]
+      },
+      "Vladof": {
+        "Additional Ricochets": [
+          "ADD",
+          1.0
+        ],
+        "Projectile Speed": [
+          "MUL",
+          1.5
+        ]
+      },
+      "Dahl": {
+        "Zoom Projectile Count": [
+          "ADD",
+          2.0
+        ],
+        "Zoom Shot Cost": [
+          "ADD",
+          1.0
+        ],
+        "Zoom Weapon Spread": [
+          "DIV",
+          1.5
+        ]
+      }
+    }
+  },
+  "Jakobs": {
+    "Stats": {
+      "Fire Interval": [
+        "MUL",
+        1.18
+      ],
+      "Impulse Accuracy": [
+        "MUL",
+        1.25
+      ],
+      "Min Accuracy": [
+        "DIV",
+        1.25
+      ],
+      "Weapon Damage": [
+        "MUL",
+        1.18
+      ],
+      "Weapon Spread": [
+        "DIV",
+        1.3
+      ]
+    },
+    "Matching": {
+      "Jakobs": {
+        "Impulse Accuracy": [
+          "SUB",
+          0.2
+        ],
+        "Weapon Damage": [
+          "MUL",
+          1.15
+        ],
+        "Weapon Spread": [
+          "SUB",
+          0.15
+        ]
+      }
+    }
+  },
+  "Torgue": {
+    "Stats": {
+      "Reload Time": [
+        "MUL",
+        1.25
+      ]
+    },
+    "Matching": {
+      "Bandit": {
+        "Fire Interval": [
+          "MUL",
+          1.9
+        ],
+        "Impulse Accuracy": [
+          "MUL",
+          1.25
+        ],
+        "Mag Size": [
+          "ADD",
+          8.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          2.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          2.5
+        ]
+      },
+      "Dahl": {
+        "Fire Interval": [
+          "MUL",
+          1.75
+        ],
+        "Mag Size": [
+          "ADD",
+          4.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          2.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          2.6
+        ],
+        "Zoom Fire Interval": [
+          "DIV",
+          1.6
+        ]
+      },
+      "Jakobs": {
+        "Fire Interval": [
+          "MUL",
+          1.9
+        ],
+        "Impulse Accuracy": [
+          "MUL",
+          1.25
+        ],
+        "Mag Size": [
+          "ADD",
+          4.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          1.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          2.5
+        ]
+      },
+      "Torgue": {
+        "Fire Interval": [
+          "MUL",
+          1.9
+        ],
+        "Impulse Accuracy": [
+          "MUL",
+          1.25
+        ],
+        "Mag Size": [
+          "ADD",
+          5.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          3.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          3.6
+        ]
+      },
+      "Vladof": {
+        "Fire Interval": [
+          "MUL",
+          1.6
+        ],
+        "Impulse Accuracy": [
+          "MUL",
+          1.25
+        ],
+        "Mag Size": [
+          "ADD",
+          5.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          1.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          1.7
+        ]
+      }
+    }
+  },
+  "Vladof": {
+    "Stats": {
+      "Fire Interval": [
+        "DIV",
+        1.15
+      ],
+      "Impulse Accuracy": [
+        "MUL",
+        1.1
+      ],
+      "Mag Size": [
+        "MUL",
+        1.05
+      ],
+      "Weapon Spread": [
+        "MUL",
+        1.25
+      ]
+    },
+    "Matching": {
+      "Dahl": {
+        "Burst Count": [
+          "SUB",
+          1.0
+        ],
+        "Impulse Accuracy": [
+          "ADD",
+          1.0
+        ],
+        "Mag Size": [
+          "ADD",
+          1.0
+        ],
+        "Projectile Count": [
+          "ADD",
+          1.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          1.0
+        ],
+        "Weapon Damage": [
+          "SUB",
+          0.1
+        ]
+      },
+      "Vladof": {
+        "Mag Size": [
+          "ADD",
+          5.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          1.1
+        ]
+      }
+    }
+  },
+  "Vladof Minigun": {
+    "Stats": {
+      "Fire Interval": [
+        "DIV",
+        1.3
+      ],
+      "Impulse Accuracy": [
+        "DIV",
+        1.5
+      ],
+      "Mag Size": [
+        "MUL",
+        1.5
+      ],
+      "Weapon Spread": [
+        "MUL",
+        1.2
+      ]
+    },
+    "Matching": {
+      "Bandit": {
+        "Barrel Spin Down Time": [
+          "ADD",
+          0.5
+        ],
+        "Barrel Spin Up Time": [
+          "ADD",
+          0.5
+        ]
+      },
+      "Dahl": {
+        "Zoom Fire Interval": [
+          "ADD",
+          0.03
+        ],
+        "Zoom Projectile Count": [
+          "ADD",
+          2.0
+        ],
+        "Zoom Shot Cost": [
+          "ADD",
+          2.0
+        ],
+        "Barrel Spin Down Time": [
+          "ADD",
+          1.0
+        ]
+      },
+      "Jakobs": {
+        "Barrel Spin Down Time": [
+          "ADD",
+          8.0
+        ],
+        "Impulse Accuracy": [
+          "ADD",
+          2.0
+        ],
+        "Projectile Count": [
+          "ADD",
+          2.0
+        ],
+        "Shot Cost": [
+          "ADD",
+          2.0
+        ],
+        "Weapon Spread": [
+          "ADD",
+          2.0
+        ]
+      },
+      "Tediore": {
+        "Barrel Spin Down Time": [
+          "SUB",
+          1.0
+        ]
+      },
+      "Torgue": {
+        "Extra Shot Chance": [
+          "MUL",
+          1.25
+        ],
+        "Mag Size": [
+          "ADD",
+          4.0
+        ]
+      },
+      "Vladof": {
+        "Barrel Spin Up Time": [
+          "SUB",
+          0.25
+        ],
+        "Mag Size": [
+          "ADD",
+          6.0
+        ],
+        "Weapon Damage": [
+          "MUL",
+          1.1
+        ]
+      }
+    }
+  }
+}

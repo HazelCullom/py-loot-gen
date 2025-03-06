@@ -1,0 +1,49 @@
+No Sight
+On Zoom:
+÷3 Movement Speed,
+Bandit
+Bandit Mesh
+÷1.39 Zoom FOV
+On Zoom:
+÷3 Movement Speed,
+Dahl
+Dahl Mesh
+÷1.91 Zoom FOV
+On Zoom:
+÷3 Movement Speed
+÷1.3 Weapon Spread,
+Hyperion
+Hyperion Mesh
+÷3.34 Zoom FOV
+On Zoom:
+÷3 Movement Speed
+÷1.4 Weapon Spread,
+Jakobs
+Jakobs Mesh
+÷2.82 Zoom FOV
+On Zoom:
+÷3 Movement Speed
+÷1.5 Weapon Spread,
+Maliwan
+Maliwan Mesh
+÷2.43 Zoom FOV
+On Zoom:
+÷3 Movement Speed
+÷1.2 Weapon Spread,
+Tediore
+Tediore Mesh
+÷1.78 Zoom FOV
+On Zoom:
+÷3 Movement Speed,
+Torgue
+Torgue Mesh
+÷1.52 Zoom FOV
+On Zoom:
+÷3 Movement Speed
+÷1.2 Weapon Spread,
+Vladof
+Vladof Mesh
+÷2.04 Zoom FOV
+On Zoom:
+÷3 Movement Speed
+÷1.15 Weapon Spread

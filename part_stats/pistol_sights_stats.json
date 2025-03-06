@@ -1,0 +1,139 @@
+{
+  "No Sight": {
+    "Stats": {
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ]
+    },
+    "Matching": {}
+  },
+  "Bandit": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        1.39
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ]
+    },
+    "Matching": {}
+  },
+  "Dahl": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        1.91
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ],
+      "Zoom Weapon Spread": [
+        "DIV",
+        1.3
+      ]
+    },
+    "Matching": {}
+  },
+  "Hyperion": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        3.34
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ],
+      "Zoom Weapon Spread": [
+        "DIV",
+        1.4
+      ]
+    },
+    "Matching": {}
+  },
+  "Jakobs": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        2.82
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ],
+      "Zoom Weapon Spread": [
+        "DIV",
+        1.5
+      ]
+    },
+    "Matching": {}
+  },
+  "Maliwan": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        2.43
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ],
+      "Zoom Weapon Spread": [
+        "DIV",
+        1.2
+      ]
+    },
+    "Matching": {}
+  },
+  "Tediore": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        1.78
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ]
+    },
+    "Matching": {}
+  },
+  "Torgue": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        1.52
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ],
+      "Zoom Weapon Spread": [
+        "DIV",
+        1.2
+      ]
+    },
+    "Matching": {}
+  },
+  "Vladof": {
+    "Stats": {
+      "Zoom FOV": [
+        "DIV",
+        2.04
+      ],
+      "Zoom Movement Speed": [
+        "DIV",
+        3.0
+      ],
+      "Zoom Weapon Spread": [
+        "DIV",
+        1.15
+      ]
+    },
+    "Matching": {}
+  }
+}
